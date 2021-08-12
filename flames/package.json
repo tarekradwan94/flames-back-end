@@ -1,0 +1,38 @@
+{
+  "name": "flames",
+  "version": "0.1.0",
+  "description": "Flames back-end",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon server.js",
+    "qas": "NODE_ENV=quality nodemon server.js",
+    "prod": "NODE_ENV=production nodemon server.js",
+    "configureDB": "NODE_ENV=development node configureDB.js",
+    "configureDBQas": "NODE_ENV=quality node configureDB.js",
+    "configureDBProd": "NODE_ENV=production node configureDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tarekradwan@bitbucket.org/flamesproject/flames-back-end.git"
+  },
+  "author": "Tarek Radwan",
+  "homepage": "https://bitbucket.org/flamesproject/flames-back-end#readme",
+  "dependencies": {
+    "@azure/storage-blob": "^12.2.1",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "custom-env": "^2.0.1",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.15",
+    "helmet": "^4.1.1",
+    "mongodb": "^3.6.0",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
